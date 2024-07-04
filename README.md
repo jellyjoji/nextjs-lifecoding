@@ -31,3 +31,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 npm run build
 npm run start
 ```
+
+## json db backend
+
+```bash
+npm uninstall -D json-server
+
+npm install -D json-server@0.17.4
+
+npx json-server --port 9999 db.json
+```
