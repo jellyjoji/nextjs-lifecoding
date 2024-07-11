@@ -40,4 +40,6 @@ npm uninstall -D json-server
 npm install -D json-server@0.17.4
 
 npx json-server --port 9999 db.json
+
+//http://localhost:9999/ 에서 확인
 ```
