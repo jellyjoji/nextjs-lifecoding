@@ -2,13 +2,13 @@
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function update() {
+export default function Update() {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const router = useRouter();
   const params = useParams();
   useEffect(() => {
-    fetch("http://localhost:9999/posts" + id)
+    fetch(process.env.NEXT_PUBLIC_API_URL+'posts' + id)
       .then((resp) => resp.json())
       .then((result) => {
         console.log(result);

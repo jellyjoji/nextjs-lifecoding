@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const resp = await fetch("http://localhost:9999/posts", {
+  const resp = await fetch(process.env.NEXT_PUBLIC_API_URL+'posts', {
     // next: { revalidate: 0 },
     cache: "no-store",
   });
